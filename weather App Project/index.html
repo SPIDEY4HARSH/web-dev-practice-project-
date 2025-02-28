@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top_container">
+            <h1>
+                Weather App
+            </h1>
+            <div class="switchBtn">
+                <button class="tab" data-yourWeather>your weather </button>
+                <button class="tab" data-SearchWeather>search weather</button>
+            </div>
+        </div>
+
+        <div class="weather_info">
+
+
+            <div class="sub-container grantLocationContainer">
+                <img src="./assets/location.png" class="grantSymbol" width="30px" height="30px">
+                <h2>Grant Access Location</h2>
+                <p>Allow access to get weather information </p>
+                <button class="grant-btn" data-grantButton>
+                    Grant Access
+                </button>
+
+            </div>
+            <div class="form_container" data-formContainer>
+                <form class="form_class" data-formData>
+                    <input type="text" placeholder="search the city" class="search_input" data-searchInput />
+                    <button type="submit" class="search_btn" data-searchBtn>
+                        <img src="./assets/search.png" width="20px" height="20px">
+                    </button>
+                </form>
+            </div>
+            <!--- loading screen container -->
+            <div class="sub-container loading-container">
+                <img src="./assets/loading.gif" width="150" height="150">
+                <p>Loading</p>
+            </div>
+            <div class="sub-container displayWeatherContainer" data-weatherContainer>
+
+                <div class="cityConatiner">
+                    <p data-cityName></p>
+                    <img data-cityImage>
+                </div>
+                <div class="Weather_DESCRIPTION">
+
+                    <p data-weatherDesc></p>
+                    <img data-weathericon>
+                    <p data-temp>
+                </div>
+
+                </p>
+                <div class="parameters">
+                    <div class="parameterChild">
+                        <img src="./assets/wind.png" alt="" width="10px" height="10px" class="windImg">
+                        <p data-windspeed></p>
+                        <p>
+                            Wind Speed
+                        </p>
+
+                    </div>
+                    <div class="parameterChild">
+                        <img src="./assets/humidity.png" alt="" width="10px" height="10px" class="windImg">
+                        <p data-humidity></p>
+                        <p>
+                            Humidty
+                        </p>
+
+                    </div>
+                    <div class="parameterChild">
+                        <img src="./assets/cloud.png" alt="" width="10px" height="10px" class="windImg">
+                        <p data-Clouds></p>
+                        <p>
+                            Clouds
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
